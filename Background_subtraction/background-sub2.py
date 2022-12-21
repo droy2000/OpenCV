@@ -9,7 +9,7 @@ def rescaleFrame( frame, scale = 0.2):
 
     return cv.resize(frame, dimensions, interpolation= cv.INTER_AREA)
 
-cap = cv.VideoCapture("videos\pexels-kelly-lacy-9318006.mp4")
+cap = cv.VideoCapture("E:\\openCV\\videos\\pexels-kelly-lacy-6595761.mp4")
 
 # openCV built-in function for backgournd subtraction-------------------------
 subtractor = cv.createBackgroundSubtractorMOG2(history=25, varThreshold=10, detectShadows=True)
