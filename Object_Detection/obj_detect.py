@@ -9,7 +9,7 @@ def rescaleFrame(frame, scale = 0.3):
 
     return cv.resize(frame, dimensions, interpolation = cv.INTER_AREA)
 
-cap = cv.VideoCapture("videos\Pexels_Videos_2103099.mp4")
+cap = cv.VideoCapture("E:\\openCV\\videos\\Pexels_Videos_2103099.mp4")
 
 # cap.set(cv.CAP_PROP_FPS, 20)
 fps = cap.get(cv.CAP_PROP_FPS)
@@ -53,14 +53,14 @@ while cap.isOpened():
     cv.imshow('Mask', mask)
     # out.write(frame)
     cv.imshow("Frame", frame)
-    out.write(frame)
+    # cap.write(frame)
     if cv.waitKey(2) & 0xFF== ord('d'):
         break
                   
     
 
 cap.release()
-out.release()
+# cap.release()
 
 cv.destroyAllWindows()
 cv.waitKey(0)

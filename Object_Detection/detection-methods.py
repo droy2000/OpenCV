@@ -12,7 +12,7 @@ def rescaleFrame(frame, scale = 0.3):
     dimensions = (width, height)
     return cv.resize(frame, dimensions, interpolation= cv.INTER_AREA)
     
-cap = cv.VideoCapture("videos\Pexels_Videos_2103099.mp4")
+cap = cv.VideoCapture("E:\\openCV\\videos\\Pexels_Videos_2103099.mp4")
 
 while True:
     _, video = cap.read()
